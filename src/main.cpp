@@ -9,7 +9,7 @@ void setup() {
 void loop() {
 // write your code here
     int ldrRaw = analogRead(LDR_PIN);
-    int lightPercent = map(ldrRaw, 0, 1023, 0, 100);
+    int lightPercent = map(ldrRaw, 0, 1023, 100, 0);
     Serial.print("LDR Raw Value: ");
     Serial.print(ldrRaw);
     Serial.print(" | Light Intensity: ");
